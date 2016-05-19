@@ -8,6 +8,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 ext.jadxClasspath = 'clsp-data/android-5.1.jar'
+group = 'com.github.fschrofner'
 
 dependencies {
     runtime files(jadxClasspath)
