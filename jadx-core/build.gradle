@@ -20,6 +20,24 @@ dependencies {
     compile fileTree(dir: 'lib', include: ['*.jar'])
 }
 
+artifacts {
+  archives file: file('lib/dx-1.10.jar'), name: 'dx', type: 'jar'
+  archives file: file('build/libs/jadx-core.jar'), name: 'jadx', type: 'jar'
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.7'
+}
+
+install {
+  repositories {
+    mavenInstaller {
+      addFilter('dx') {artifact, file ->
+	artifact.name == 'dx'
+      }
+      addFilter('jadx') {artifact, file ->
+	artifact.name == 'jadx'
+      }
+    }
+  }
 }
