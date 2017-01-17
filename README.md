@@ -16,11 +16,11 @@ allprojects {
 Then add this repository as dependency:
 ```
 dependencies {
-    compile 'com.github.fschrofner:jadx-jitpack:0.6.1-dev2'
+    compile 'com.github.fschrofner:jadx-jitpack:0.6.1'
 }
 ```
 
-Please note, that there might be a newer tag. Just check the newest available tag [here](https://jitpack.io/#fschrofner/jadx-jitpack) (also shown next to the headline) and replace _0.6.1-dev2_ by the newest tag name.  
+Please note, that there might be a newer tag. Just check the newest available tag [here](https://jitpack.io/#fschrofner/jadx-jitpack) (also shown next to the headline) and replace _0.6.1_ by the newest tag name.  
 If you'd like to use another build system, just check the link above as well.
 
 ####Logback
@@ -56,7 +56,7 @@ allprojects {
 }
 
 dependencies {
-    compile name: 'jadx-core-0.6.1-dev2'
+    compile name: 'jadx-core-0.6.1'
 }
 ```
 
